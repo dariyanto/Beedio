@@ -19,6 +19,7 @@
 
 package marabillas.loremar.beedio.browserapp
 
+import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -31,6 +32,6 @@ import javax.inject.Singleton
 interface BrowserAppComponent : AndroidInjector<BrowserApp> {
     @Component.Factory
     interface Factory {
-        fun create(@BindsInstance browserApp: BrowserApp): BrowserAppComponent
+        fun create(@BindsInstance app: BrowserApp, @BindsInstance context: Context): BrowserAppComponent
     }
 }

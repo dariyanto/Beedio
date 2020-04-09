@@ -26,11 +26,13 @@ import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.bottomappbar.BottomAppBar
 
 /* View */
 fun View.textView(resId: Int): TextView = findViewById(resId)
 fun View.imageView(resId: Int): ImageView = findViewById(resId)
 fun View.recyclerView(resId: Int): RecyclerView = findViewById(resId)
+fun View.bottomAppBar(resId: Int): BottomAppBar = findViewById(resId)
 
 /* Activity */
 fun Activity.textView(resId: Int): TextView = findViewById(resId)
